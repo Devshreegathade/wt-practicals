@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let a = document.getElementById("no1").value;
+            let b = document.getElementById("no2").value;
+            let x = parseInt(a);
+            let y = parseInt(b);
+            let z = x + y;
+            alert(z);
+            document.getElementById("output").innerHTML = z;
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td><input type ="button" id="no1" value="1" onclick="number(1)"></td>
+            <td><input type ="button" id="no2" value="2" onclick="number(2)"></td>
+            <td><input type ="button" id="no3" value="3" onclick="number(3)"></td>
+            <td><button type="button" onclick="add()">+</button></td>
+        </tr>
+    </table>
+</body>
+</html>

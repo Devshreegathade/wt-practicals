@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function add(){
+            let a = document.getElementById("no1").value;
+            let b = document.getElementById("no2").value;
+            let x = parseInt(a);
+            let y = parseInt(b);
+            let z = x + y;
+            alert(z);
+            document.getElementById("output").innerHTML = z;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type ="text" id="no1"> <br> <br>
+        <br>
+        <input type ="text" id="no2"> <br> <br>
+        <br>
+        <button type="button" onclick="add()">add</button><br><br>
+        <br>
+    </form>
+    Result :<Span id="output"></Span>
+    
+</body>
+</html>

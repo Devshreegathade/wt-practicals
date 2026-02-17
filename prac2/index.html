@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function add(){
+            let a = document.getElementById("no1").value;
+            let b = document.getElementById("no2").value;
+            let x = parseInt(a);
+            let y = parseInt(b);
+            let z = x + y;
+            alert(z);
+            document.getElementById("output").innerHTML = z;
+        }
+        function sub(){
+            let a = document.getElementById("no1").value;
+            let b = document.getElementById("no2").value;
+            let x = parseInt(a);
+            let y = parseInt(b);
+            let z = x - y;
+            alert(z);
+            document.getElementById("output").innerHTML = z;
+        }
+        function div(){
+            let a = document.getElementById("no1").value;
+            let b = document.getElementById("no2").value;
+            let x = parseInt(a);
+            let y = parseInt(b);
+            let z = x / y;
+            alert(z);
+            document.getElementById("output").innerHTML = z;
+        }
+        function mul(){
+            let a = document.getElementById("no1").value;
+            let b = document.getElementById("no2").value;
+            let x = parseInt(a);
+            let y = parseInt(b);
+            let z = x * y;
+            alert(z);
+            document.getElementById("output").innerHTML = z;
+        }
+        
+        function numberpass(num){
+            document.getElementById("no1").value = num;
+            alert(num);
+        }
+    </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td><button type ="button" onclick="numberpass(1)">1</button></td>
+            <td><button type ="button" onclick="numberpass(2)">2</button></td>
+            <td><button type ="button" onclick="numberpass(2)">3</button></td>
+            <td><button type="button" onclick="add()">+</button></td>
+        </tr>
+        <tr>
+            <td><button type ="button" onclick="numberpass(4)">4</button></td>
+            <td><button type ="button" onclick="numberpass(5)">5</button></td>
+            <td><button type ="button" onclick="numberpass(6)">6</button></td>
+            <td><button type="button" onclick="sub()">-</button></td>
+        </tr>
+        <tr>
+            <td><button type ="button" onclick="numberpass(7)">7</button></td>
+            <td><button type ="button" onclick="numberpass(8)">8</button></td>
+            <td><button type ="button" onclick="numberpass(9)">9</button></td>
+            <td><button type="button" onclick="mul()" onclick="number">*</button></td>
+        </tr>
+        <tr>
+            <td><input type ="reset" value="reset"></td>
+            <td><button type ="button" onclick="numberpass(0)">0</button></td>
+            <td><button type="button">ans</button></td>
+            <td><button type="button" onclick="div()">/</button></td>
+        </tr>
+    </table>
+    <br>
+    Result :<Span id="output"></Span>
+</body>
+</html>
